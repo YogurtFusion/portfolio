@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Navbar from "@/sections/Navbar";
 
 export default function Home() {
   return (
-    <div>
-      
+    <div className="h-[1000vh] " >
+      <Navbar/>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import {Poppins ,Playfair_Display } from "next/font/google";
+import { Poppins, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -10,9 +10,8 @@ const poppins = Poppins({
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display",
   subsets: ["latin"],
-  weight: ["400"]
-})
-
+  weight: ["400"],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -22,9 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={` ${poppins.variable} ${playfairDisplay.variable}`}
-      >
+      <body className={` ${poppins.variable} ${playfairDisplay.variable}`}>
         {children}
       </body>
     </html>

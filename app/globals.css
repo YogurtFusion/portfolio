@@ -25,17 +25,21 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 } */
 
-:root{
-  --bg: #F5F5F0;
-  --nav-bg:  rgba(255,255,255,0.6);
+:root {
+  --bg: #f5f5f0;
+  --nav-bg: rgba(255, 255, 255, 0.6);
 }
 
 body {
   zoom: 100%;
-  font-family: var(--font-poppins); 
-  background-color: #F5F5F0;
+  font-family: var(--font-poppins);
+  background-color: #f5f5f0;
 }
 
-.logo-text{
+.logo-text {
   font-family: var(--font-playfair-display);
+}
+
+section{
+  margin-bottom: 96px;
 }

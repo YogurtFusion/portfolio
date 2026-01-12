@@ -1,9 +1,11 @@
-import Navbar from "@/sections/Navbar";
+import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <div className="h-[1000vh] " >
-      <Navbar/>
+    <div>
+      <Navbar />
+      <Hero/>
     </div>
   );
 }

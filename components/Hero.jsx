@@ -1,5 +1,5 @@
 import React from "react";
-
+import HeroButton from "./ui/HeroButton";
 const Hero = () => {
   return (
     <section className="hero min-h-screen flex justify-between items-center mt-24  ">
@@ -16,14 +16,21 @@ const Hero = () => {
         <h1 className="text-[#E6C35A] ">GLOW </h1>
         <h1 className="text-[#1e1e1ecc] ">STUDIOS</h1>
       </div>
-      <div className="hero-text flex flex-col items-end justify-center w-96 mb-8 px-4 py-2 rounded-3xl   " style={{
-        color: "var(--c-hero-p)",
-        fontSize: "var(--fs-hero-p) ",
-        letterSpacing: "var(--ls-p) ",
-        lineHeight: "var(--lh-p) "
-      }} >
+      <div className="hero-body flex flex-col items-start justify-center  w-96   rounded-3xl p-6 ">
+
+      <div className="hero-text p-2 " style={{
+          color: "var(--c-hero-p)",
+          fontSize: "var(--fs-hero-p) ",
+          letterSpacing: "var(--ls-p) ",
+          lineHeight: "var(--lh-p) "
+        }} >
         Websites for restaurants that value speed, clarity, and customers.
+          </div>
+          <div className="hero-btn mx-2 ">
+          <HeroButton/>
+          </div>
       </div>
+      
       </div>
     </section>
   );

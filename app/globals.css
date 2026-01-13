@@ -3,13 +3,16 @@
 :root {
   /* color */
   --c-bg: #f5f5f0;
+  --c-btn-bg: white;
+  --c-btn-text:#fff;
   --c-nav-bg: rgba(255, 255, 255, 0.6);
   --c-hero-text-bg: #F5F5F0CC;
   --c-hero-p: #1C1C1C;
+  
   /* font sizes */
   --fs-hero-h1: 128px;
   --fs-hero-p: 16px;
-  --fs-links: 18px;
+  --fs-links: 16px;
 
   /* line heights */
   --lh-h1: 110%;
@@ -51,10 +54,14 @@ section{
   z-index: 2;
 }
 
-.hero-head,
-.hero-text{
+.hero-head{
   background: var(--c-hero-text-bg);
 } 
+
+.hero-text,
+.hero-btn{
+  background: var(--c-hero-text-bg);
+}
 
 
 .hero::before{

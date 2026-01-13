@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="  bg-(--nav-bg) fixed top-6 left-0 right-0 z-50 backdrop-blur-xl shadow-sm rounded-full h-16 max-w-6xl w-full mx-auto flex justify-between items-center px-6 ">
+    <nav className="  bg-(--nav-bg) fixed top-6 left-0 right-0 z-50 backdrop-blur-sm  shadow-sm rounded-full h-16 max-w-6xl w-full mx-auto flex justify-between items-center px-6 ">
       <div className="logo flex justify-center items-center gap-2 52 ">
         <div className="logo-img">
           <img

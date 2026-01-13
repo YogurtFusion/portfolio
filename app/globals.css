@@ -1,4 +1,74 @@
 @import "tailwindcss";
+
+:root {
+  /* color */
+  --c-bg: #f5f5f0;
+  --c-nav-bg: rgba(255, 255, 255, 0.6);
+  --c-hero-text-bg: #F5F5F0CC;
+  --c-hero-p: #1C1C1C;
+  /* font sizes */
+  --fs-hero-h1: 128px;
+  --fs-hero-p: 16px;
+  --fs-links: 18px;
+
+  /* line heights */
+  --lh-h1: 110%;
+  --lh-p: 140%;
+  /* --lh-p2: 135%; */
+
+  /* letter spacing */
+--ls-h1: 0.01em;
+--ls-p: 0.012em;
+--ls-link: 0.01em;
+
+}
+
+body {
+  zoom: 100%;
+  font-family: var(--font-poppins);
+  background-color: var(--c-bg);
+}
+
+.logo-text {
+  font-family: var(--font-playfair-display);
+}
+
+section{
+  margin-bottom: 96px;
+}
+
+.hero{
+  background-image: url("/images/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+
+.hero >*{
+  position: relative;
+  z-index: 2;
+}
+
+.hero-head,
+.hero-text{
+  background: var(--c-hero-text-bg);
+} 
+
+
+.hero::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:  rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+
+
+
+
+
 /* 
 :root {
   --background: #ffffff;
@@ -24,22 +94,3 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 } */
-
-:root {
-  --bg: #f5f5f0;
-  --nav-bg: rgba(255, 255, 255, 0.6);
-}
-
-body {
-  zoom: 100%;
-  font-family: var(--font-poppins);
-  background-color: #f5f5f0;
-}
-
-.logo-text {
-  font-family: var(--font-playfair-display);
-}
-
-section{
-  margin-bottom: 96px;
-}

@@ -2,131 +2,183 @@ import React from "react";
 import AboutBtn from "./ui/AboutBtn";
 const approachData = [
   {
-    week: "week1",
+    week: "week 01",
     title: "Discovery & Strategy",
-    desription:
+    description:
       "We start by understanding your business goals, user needs, and technical constraints.",
   },
   {
-    week: "week2",
+    week: "week 02",
     title: "Design & Prototyping",
-    desription:
+    description:
       "We design, test, and refine until the solution feels right and works seamlessly",
   },
   {
-    week: "week3",
+    week: "week 03",
     title: "Build & Launch",
-    desription:
+    description:
       "We build with clean code, deploy with confidence, and support you beyond launch.",
   },
 ];
 const About = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2  gap-8 p-12 mx-auto max-w-336 border-b border-[#BFBFBF] ">
-      {/* i wannated to write 1344 but vs code  is giving me warning and suggest to write in 336 so ingore the width  */}
-      <div className="left flex flex-col justify-center gap-8 p-6">
-        <div className="flex flex-col gap-3 p-6">
-          <p
-            className=" uppercase tracking-widest "
-            style={{
-              fontSize: "var(--fs-sub-head)",
-              color: "var(--c-sub-head) ",
-            }}
-          >
-            Who are we
-          </p>
-          <h1
-            className=""
-            style={{
-              color: "var(--c-h1) ",
-              fontSize: "var(--fs-head)",
-              lineHeight: "var(--lh-h1)",
-              letterSpacing: "var(--ls-p) ",
-            }}
-          >
-            About Us
-          </h1>
-        </div>
-        <div className="flex flex-col justify-center gap-10 p-6">
-          <p
-            className=""
-            style={{
-              color: "var(--c-h2) ",
-              fontSize: "var(--fs-p) ",
-              letterSpacing: "var(--ls-p) ",
-              lineHeight: "var(--lh-p) ",
-            }}
-          >
-            Yellow Glow Studios is a small, focused team of designers and
-            developers who believe great work comes from deep understanding and
-            thoughtful execution
-          </p>
-          <p
-            className=""
-            style={{
-              color: "var(--c-p) ",
-              fontSize: "var(--fs-p) ",
-              letterSpacing: "var(--ls-p) ",
-              lineHeight: "var(--lh-p) ",
-            }}
-          >
-            Every project receives our full attention. We don't take on more
-            than we can handle with care.
-          </p>
-        </div>
-        <div className="p-6">
-          <AboutBtn />
-        </div>
-      </div>
-      <div className=" abt-right p-8 flex flex-col border-l border-[#BFBFBF] ">
-        <div className="right-head flex flex-col gap-3 py-6 px-8">
-          <p
-            className=" uppercase tracking-widest "
-            style={{
-              fontSize: "var(--fs-sub-head)",
-              color: "var(--c-sub-head) ",
-            }}
-          >
-            Our Approach
-          </p>
-          <h3
-            className=" text-[#121212] "
-            style={{
-              fontSize: "var(--fs-h3) ",
-              lineHeight: "var(--lh-p) ",
-              letterSpacing: "var(--lh-p) "
+    <section className=" w-full bg-[#FDFCF8] text-[#121212] py-20 px-6  border-b border-neutral-200 ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 max-w-7xl mx-auto ">
+        <div className="left relative flex flex-col justify-between gap-12 lg:pr-16 lg:py-8 lg:border-r border-neutral-200 ">
+          <div className="flex flex-col gap-8 lg:sticky lg:top-10">
+            <span className="uppercase tracking-[0.2em] text-sm text-neutral-500 font-medium ">
+              Who are we
+            </span>
 
-            }}
-          >
-            We start with strategy, move through design, and finish with
-            flawless execution. No handoffs, no miscommunication
-          </h3>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.1] tracking-tight ">
+              We're a small team of designers and developers who believe in the
+              power of <span className="text-neutral-400">restraint</span>
+            </h2>
+            <div className="flex flex-col gap-6 max-w-md text-neutral-600 text-lg leading-relaxed">
+          
+              <p>
+                Every project receives our full attention. We don't take on more
+                than we can handle with care.
+              </p>
+            </div>
+            <div className="pt-4">
+              <AboutBtn />
+            </div>
+          </div>
         </div>
-        {approachData.map((about, index)=> (
-  <div key={index} className="right-body py-6 px-8 flex flex-col justify-center gap-6">
-            <div className="flex flex-col justify-center gap-3">
 
-              <p
-            className=" uppercase tracking-widest "
-            style={{
-                fontSize: "var(--fs-sub-head)",
-                color: "var(--c-sub-head) ",
-            }}
+        <div className=" abt-right lg:pl-16 lg:py-8 mt-12 lg:mt-0 flex flex-col  ">
+          <div className="right-head flex flex-col gap-8 mb-16">
+            <span className="uppercase tracking-[0.2em] text-sm text-neutral-500 font-medium ">
+              Our Approach
+            </span>
+
+            <h3 className=" text-2xl md:text-3xl font-normal leading-snug text-neutral-800">
+              We start with strategy, move through design, and finish with
+              flawless execution. No handoffs, no miscommunication
+            </h3>
+          </div>
+          {approachData.map((about, index) => (
+            <div
+              key={index}
+              className="right-body group flex flex-col gap-4 border-t border-neutral-200 pt-8 transition-colors  duration-300 hover:border-neutral-900"
             >
-            {about.week}
-          </p>
-          <h2 className="text-[#121212] text-xl tracking-[0.2px] leading-[110%] w-32" >
-            {about.title}
-          </h2>
+              <span className="uppercase tracking-widest text-xs text-neutral-400 group-hover:text-black transition-colors">{about.week} </span>
+              <div className="flex flex-col  md:justify-between md:flex-row  md:gap-8">
+                <h4 className="text-neutral-900  text-xl font-medium  w-full md:w-1/3 ">
+                  {about.title}
+                </h4>
+                <p className="text-neutral-600 leading-relaxed w-full md:w-2/3">
+                  {about.description}{" "}
+                </p>
               </div>
-
-          <p>{about.desription} </p>
+            </div>
+          ))}
         </div>
-        ))}
-      
       </div>
     </section>
   );
 };
 
 export default About;
+// import React from "react";
+// import AboutBtn from "./ui/AboutBtn"; // Assuming same folder
+
+// const approachData = [
+//   {
+//     week: "01",
+//     title: "Discovery & Strategy",
+//     description:
+//       "We start by understanding your business goals, user needs, and technical constraints. No assumptions, just data.",
+//   },
+//   {
+//     week: "02",
+//     title: "Design & Prototyping",
+//     description:
+//       "We design, test, and refine until the solution feels right. Interactive prototypes ensure we share the same vision.",
+//   },
+//   {
+//     week: "03",
+//     title: "Build & Launch",
+//     description:
+//       "We build with clean code, deploy with confidence, and support you beyond launch to ensure stability.",
+//   },
+// ];
+
+// const About = () => {
+//   return (
+//     <section className="w-full bg-[#FDFCF8] text-[#121212] py-20 px-6 md:px-12 border-b border-neutral-200">
+//       {/* Container to limit max width */}
+//       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2">
+
+//         {/* LEFT COLUMN - Sticky Position */}
+//         <div className="relative flex flex-col justify-between gap-12 lg:pr-16 lg:py-8 lg:border-r border-neutral-200">
+//           <div className="flex flex-col gap-8 lg:sticky lg:top-10">
+
+//             {/* Label */}
+//             <span className="uppercase tracking-[0.2em] text-sm text-neutral-500 font-medium">
+//               About Us
+//             </span>
+
+//             {/* Main Headline - The "Hero" Text */}
+//             <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.1] tracking-tight">
+//               We're a small team of designers and developers who believe in the
+//               power of <span className="text-neutral-400">restraint.</span>
+//             </h2>
+
+//             {/* Subtext */}
+//             <div className="flex flex-col gap-6 max-w-md text-neutral-600 text-lg leading-relaxed">
+//               <p>
+//                 Yellow Glow Studios is a focused team. We believe great work comes
+//                 from deep understanding, not just throwing pixels at a screen.
+//               </p>
+//               <p>
+//                 Every project receives our full attention. We don't take on more
+//                 than we can handle with care.
+//               </p>
+//             </div>
+
+//             {/* Button */}
+//             <div className="pt-4">
+//               <AboutBtn />
+//             </div>
+//           </div>
+//         </div>
+
+//         {/* RIGHT COLUMN - Scrollable Content */}
+//         <div className="flex flex-col lg:pl-16 lg:py-8 mt-12 lg:mt-0">
+//           <div className="flex flex-col gap-8 mb-16">
+//             <span className="uppercase tracking-[0.2em] text-sm text-neutral-500 font-medium">
+//               Our Approach
+//             </span>
+//             <h3 className="text-2xl md:text-3xl font-normal leading-snug text-neutral-800">
+//               We start with strategy, move through design, and finish with
+//               flawless execution. No handoffs, no miscommunication.
+//             </h3>
+//           </div>
+
+//           {/* List Items */}
+//           <div className="flex flex-col gap-12">
+//             {approachData.map((item, index) => (
+//               <div key={index} className="group flex flex-col gap-4 border-t border-neutral-200 pt-8 transition-colors duration-300 hover:border-neutral-900">
+//                 <span className="uppercase tracking-widest text-xs text-neutral-400 group-hover:text-black transition-colors">
+//                   Week {item.week}
+//                 </span>
+//                 <div className="flex flex-col md:flex-row md:justify-between md:gap-8">
+//                   <h4 className="text-xl font-medium w-full md:w-1/3 text-neutral-900">
+//                     {item.title}
+//                   </h4>
+//                   <p className="text-neutral-600 leading-relaxed w-full md:w-2/3">
+//                     {item.description}
+//                   </p>
+//                 </div>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default About;

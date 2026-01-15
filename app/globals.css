@@ -20,13 +20,14 @@
   --fs-links: 16px;
   --fs-h1: 64px;
   --fs-h2: 48px;
+  --fs-h3:24px;
   --fs-p: 20px;
   --fs-sub-head: 16px;
 
   /* line heights */
   --lh-h1: 110%;
   --lh-p: 140%;
-  --lh-h2:110%
+  --lh-h2:110%;
   /* --lh-p2: 135%; */
 
   /* letter spacing */

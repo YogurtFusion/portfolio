@@ -7,7 +7,7 @@ const CtaBtn = () => {
         Get in touch
         
        
-        <span className='absolute bottom-0 left-0 h-[2px] w-full bg-amber-50 origin-left transform scale-x-0 transition-transform duration-300 ease-out will-change-transform group-hover:scale-x-100'></span>
+        <span className='absolute bottom-0 left-0 h-0.5 w-full bg-amber-50 origin-left transform scale-x-0 transition-transform duration-300 ease-out will-change-transform group-hover:scale-x-100'></span>
       </span>
     </button> 
   )

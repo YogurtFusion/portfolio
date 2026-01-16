@@ -1,5 +1,7 @@
 import ProjectsCards from "@/components/ui/ProjectsCards";
 import React from "react";
+import CtaSection from "@/components/ProjectCta";
+import ProjectCta from "@/components/ProjectCta";
 
 const processData = [
   {
@@ -18,7 +20,7 @@ const processData = [
 
 const ProjectPage = () => {
   return (
-    <main className="bg-projects-gradient min-h-screen pt-32 pb-20 px-6 ">
+    <main className="bg-projects-gradient min-h-screen pt-32 pb-10 px-6 ">
       <div className="max-w-7xl m-auto">
         {/* head 😶‍🌫️😶‍🌫️ */}
         <div className="mb-24">
@@ -47,8 +49,10 @@ const ProjectPage = () => {
           <div></div>
         </div>
 
-        <ProjectsCards/>
+        <ProjectsCards />
+        
       </div>
+        <ProjectCta />
     </main>
   );
 };

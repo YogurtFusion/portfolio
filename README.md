@@ -1,5 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Yellow Glow Studios 🟡
 
+A minimalist, high-performance portfolio website for a digital design agency specializing in websites for restaurants and cafes.
+
+![Project Preview](https://via.placeholder.com/1200x600?text=Upload+Your+Screenshot+Here)
+## 🚀 About The Project
+
+Yellow Glow Studios is a niche web design agency portfolio. The goal of this project was to create a clean, high-speed landing page that converts visitors into clients using a minimalist aesthetic and clear calls to action.
+
+**Key Features:**
+* **Minimalist Design:** Clean UI with a focus on typography and negative space.
+* **Responsive Layout:** Fully optimized for mobile, tablet, and desktop using Tailwind Grid/Flexbox.
+* **Fast Performance:** Built on Next.js 16 with static site generation (SSG) for instant loading.
+* **Smooth Animations:** subtle hover effects and transitions using Tailwind utilities.
+* **Contact Integration:** Direct `mailto` integration with pre-filled subject lines.
+
+## 🛠️ Tech Stack
+
+* **Framework:** [Next.js 16 (App Router)](https://nextjs.org/)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Language:** JavaScript
+* **Deployment:** [Vercel](https://vercel.com/)
+* **Font:** Poppins/ Inter 
 ## Getting Started
 
 First, run the development server:
@@ -34,3 +55,16 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## 📂 Project Structure
+
+```text
+├── app/                  # App Router pages and layouts
+│   ├── layout.tsx        # Main layout (metadata, fonts)
+│   ├── page.tsx          # Homepage content
+│   └── icon.png          # App Favicon
+├── components/           # Reusable UI components
+│   ├── ui/               # Buttons, Cards, etc.
+│   └── sections/         # Hero, About, Projects sections
+├── public/               # Static assets (images, icons)
+└── tailwind.config.ts    # Tailwind configuration

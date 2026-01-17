@@ -10,39 +10,25 @@ const Projects = () => {
       className="p-12 w-full max-w-336 mx-auto "
       style={{ background: "var(--c-project-bg)" }}
     >
-      <div className="project-head flex justify-between items-end p-6  ">
+      <div className="project-head flex flex-col md:flex-row justify-between items-end p-6  ">
         <div className="flex flex-col gap-3 ">
           <p
-            className=""
-            style={{
-              fontSize: "var(--fs-sub-head)",
-              color: "var(--c-sub-head) ",
-            }}
+            className="text-base text-neutral-600"
           >
             Selected work
           </p>
-          <h1
-            className=""
-            style={{
-              color: "var(--c-h1) ",
-              fontSize: "var(--fs-head)",
-              lineHeight: "var(--lh-h1)",
-              letterSpacing: "var(--ls-p) ",
-            }}
-          >
+          <h1>
+
+          <span
+            className="text-5xl  md:text-6xl text-neutral-900 tracking-wide leading-tight">
             Projects we're
-          </h1>
-          <h1
-            className=""
-            style={{
-              color: "var(--c-h1) ",
-              fontSize: "var(--fs-head)",
-              lineHeight: "var(--lh-h1)",
-              letterSpacing: "var(--ls-p) ",
-            }}
-          >
+          </span>
+          <br className="" />
+          <span
+            className="text-5xl  md:text-6xl text-neutral-900 tracking-wide leading-tight">
             proud of
-          </h1>
+          </span>
+            </h1>
         </div>
         <SectionBtn />
       </div>

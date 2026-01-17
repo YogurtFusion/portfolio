@@ -63,26 +63,15 @@ section {
   background-position: center;
   background-size: cover;
   position: relative;
+  background-color: #FDFBF7; 
+  /* CHANGE #E5E5E5 TO #ECEBE4 (or something lighter/warmer) */
+  background-image: radial-gradient(#E8E6E1 1.5px, transparent 1.5px);
+  background-size: 24px 24px; 
 }
-
 .hero > * {
   position: relative;
   z-index: 2;
 }
 
-.hero-head {
-  background: var(--c-hero-text-bg);
-}
 
-.hero-text,
-.hero-btn {
-  background: var(--c-hero-text-bg);
-}
 
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.1);
-  z-index: 1;
-}

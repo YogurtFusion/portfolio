@@ -22,17 +22,16 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link href={"/"} className="hover:text-black transition-colors">
+          <Link href={"#services"} className="hover:text-black transition-colors">
             Services
           </Link>
         </li>
         <li className="hidden md:block">
-          <Link href={"/"} className="hover:text-black transition-colors">
+          <Link href={"#about"} className="hover:text-black transition-colors">
             About Us
           </Link>
         </li>
         <li>
-          {" "}
           <NavBtn />
         </li>
       </ul>

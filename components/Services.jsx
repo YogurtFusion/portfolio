@@ -12,7 +12,7 @@ const servicesData = [
 ];
 const Services = () => {
   return (
-    <section className="w-full max-w-336 mx-auto p-12 flex flex-col gap-20">
+    <section className="w-full max-w-336 mx-auto p-12 flex flex-col gap-20" id="services">
       <div className="project-head grid grid-cols-1 md:grid-cols-2 gap-10 items-end pb-6   border-b border-[#DBDAD6]  ">
         <div className="flex flex-col gap-3 ">
           <p

@@ -26,10 +26,10 @@ const Footer = () => {
                 <Link href={"/"}>Home</Link>
               </li>
               <li className="hover:text-black transition-colors">
-                <Link href={"/"}>Projects</Link>
+                <Link href={"/projects"}>Projects</Link>
               </li>
               <li className="hover:text-black transition-colors">
-                <Link href={"/"}>Services</Link>
+                <Link href={"#services"}>Services</Link>
               </li>
             </ul>
           </div>
@@ -39,10 +39,10 @@ const Footer = () => {
             </h3>
             <ul className="space-y-4 text-neutral-800">
               <li className=" hover:text-black transition-colors">
-                <Link href={"/"}>UI/UX Design</Link>
+                <Link href={"#services"}>UI/UX Design</Link>
               </li>
               <li className=" hover:text-black transition-colors">
-                <Link href={"/"}>Web Development</Link>
+                <Link href={"#services"}>Web Development</Link>
               </li>
             </ul>
           </div>
@@ -51,12 +51,13 @@ const Footer = () => {
             <h3 className="text-xs font-bold uppercase tracking-wider text-neutral-500 mb-6">
               Get in Touch
             </h3>
-            <Link
+                <a
+      href="mailto:yellowglowstudios@gmail.com?subject=Website%20project%20inquiry&body=Hi%20Yellow%20Glow%20Studios,%0D%0A%0D%0AI’m%20interested%20in%20a%20website%20for%20my%20business.%0D%0A%0D%0AHere%20are%20a%20few%20quick%20details:%0D%0A•%20Business%20type:%0D%0A•%20Timeline:%0D%0A•%20Budget%20range%20(optional):%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you.%0D%0A%0D%0AThanks,"
+
               className="text-neutral-800 border-b border-neutral-300 pb-1 hover:border-black transition-colors"
-              href={"/"}
-            >
+                          >
               yellowglowstudios@gmail.com
-            </Link>
+            </a>
           </div>
         </div>
         <div className="border-t border-neutral-300 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-neutral-500 ">
@@ -65,19 +66,19 @@ const Footer = () => {
           <div className="flex gap-6 mt-4 md:mt-0">
             <Link
               className="hover:text-black transition-colors underline decoration-neutral-300"
-              href={"/"}
+              href={"https://linkedin.com/in/aniketattech"}
             >
               LinkedIn
             </Link>
             <Link
               className="hover:text-black transition-colors underline decoration-neutral-300"
-              href={"/"}
+              href={"https://github.com/YogurtFusion"}
             >
-              Instagram
+              GitHub
             </Link>
             <Link
               className="hover:text-black transition-colors underline decoration-neutral-300"
-              href={"/"}
+              href={"https://x.com/AniketAtTech"}
             >
               X
             </Link>

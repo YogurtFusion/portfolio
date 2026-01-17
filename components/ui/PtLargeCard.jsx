@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProjectLargeCard = () => {
   return (
-    <div className='flex flex-col h-full' >
+    <div className='flex flex-col h-full ' >
      <div className=" bg-[#D9CFA6] w-full flex flex-1  items-center justify-center max-h-160 h-full relative group ">
       <span className='font-serif italic text-3xl text-[#B1A988] ' > Lumina </span>
      </div>

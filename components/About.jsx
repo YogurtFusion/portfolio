@@ -22,7 +22,7 @@ const approachData = [
 ];
 const About = () => {
   return (
-    <section className=" w-full bg-[#FDFCF8] text-[#121212] py-20 px-6  border-b border-neutral-200 ">
+    <section className=" w-full bg-[#FDFCF8] text-[#121212] py-20 px-6  border-b border-neutral-200 " id="about">
       <div className="grid grid-cols-1 lg:grid-cols-2 max-w-7xl mx-auto ">
         <div className="left relative flex flex-col justify-between gap-12 lg:pr-16 lg:py-8 lg:border-r border-neutral-200 ">
           <div className="flex flex-col gap-8 lg:sticky lg:top-10">

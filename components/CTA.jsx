@@ -3,7 +3,7 @@ import CtaBtn from "./ui/CtaBtn";
 
 const CTA = () => {
   return (
-    <section className=" w-full px-6 py-32 md:p-24 bg-[#FDFCF8] border-t border-neutral-200 ">
+    <section className=" w-full px-6 py-32 md:p-24 bg-[#FDFCF8] border-t border-neutral-200 " id="cta">
       <div className="max-w-7xl mx-auto w-full flex flex-col items-start gap-12 md:gap-16 ">
         <div className="flex flex-col gap-6 ">
           <div className="flex  items-center gap-3">

@@ -2,7 +2,7 @@ import React from "react";
 import HeroButton from "./ui/HeroButton";
 const Hero = () => {
   return (
-    <section className="hero min-h-screen w-full flex items-center justify-center md:pt-0 pt-24   ">
+    <section className="hero min-h-screen w-full flex items-center justify-center md:pt-0 pt-24   " id="hero">
       <div className=" max-w-7xl mx-auto w-full px-4 md:px-8">
         <div className="hero-head grid grid-cols-1 md:grid-cols-12 gap-y-12 md:gap-y-0 items-end">
           <div className="md:col-span-7 flex flex-col">
@@ -16,8 +16,7 @@ const Hero = () => {
         </div>
         {/* hero body */}
         <div className=" md:col-span-5 flex flex-col md:items-start md:pl-8  space-y-8">
-       <p className=" text-xl md:text-2xl text-neutral-800  leading-relaxed font-medium max-w-md text-halo ">
-        Websites for restaurants that value speed, clarity, and customers
+       <p className=" text-xl md:text-2xl text-neutral-800  leading-relaxed font-medium max-w-md text-halo ">Websites for restaurants & cafes that value speed, clarity, and customers.
        </p>
         <div className="hero-btn w-full md:w-auto">
           <HeroButton />

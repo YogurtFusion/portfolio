@@ -7,7 +7,7 @@ import CTA from "@/components/CTA";
 
 export default function Home() {
   return (
-    <div>
+    <div className="mx-auto">
       <Hero/>
       <Projects/>
       <Services/>

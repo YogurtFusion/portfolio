@@ -3,7 +3,7 @@ import React from "react";
 
 const AboutBtn = () => {
   return (
-    <Link href={"/"} className=" group inline-flex items-center gap-2 transition-all duration-300 ">
+    <Link href={"/projects"} className=" group inline-flex items-center gap-2 transition-all duration-300 ">
       <span className="relative text-sm uppercase tracking-widest font-medium">
         Learn more
         <span className="absolute w-full h-px -bottom-1 origin-left transform scale-x-0 left-0  bg-[#121212] group-hover:scale-x-100 will-change-transform transition-transform duration-300 "></span>

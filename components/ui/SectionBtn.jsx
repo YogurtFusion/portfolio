@@ -4,7 +4,7 @@ import React from "react";
 const SectionBtn = () => {
   return (
     <Link
-      href={"/"}
+      href={"/projects"}
       className=" group inline-flex items-center gap-2 text-neutral-900 "
     >
       <span className=" tracking-widest uppercase text-sm font-medium relative md:flex items-center gap-1 ">

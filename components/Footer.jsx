@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#F3F2EF] border-t border-neutral-300 pt-10 md:pt-20 pb-10 ">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-16 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16 items-start">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-6">
               <div className="w-8 h-8 rounded-full border border-black flex justify-center items-center">
@@ -51,11 +51,10 @@ const Footer = () => {
             <h3 className="text-xs font-bold uppercase tracking-wider text-neutral-500 mb-6">
               Get in Touch
             </h3>
-                <a
-      href="mailto:yellowglowstudios@gmail.com?subject=Website%20project%20inquiry&body=Hi%20Yellow%20Glow%20Studios,%0D%0A%0D%0AI’m%20interested%20in%20a%20website%20for%20my%20business.%0D%0A%0D%0AHere%20are%20a%20few%20quick%20details:%0D%0A•%20Business%20type:%0D%0A•%20Timeline:%0D%0A•%20Budget%20range%20(optional):%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you.%0D%0A%0D%0AThanks,"
-
+            <a
+              href="mailto:yellowglowstudios@gmail.com?subject=Website%20project%20inquiry&body=Hi%20Yellow%20Glow%20Studios,%0D%0A%0D%0AI’m%20interested%20in%20a%20website%20for%20my%20business.%0D%0A%0D%0AHere%20are%20a%20few%20quick%20details:%0D%0A•%20Business%20type:%0D%0A•%20Timeline:%0D%0A•%20Budget%20range%20(optional):%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you.%0D%0A%0D%0AThanks,"
               className="text-neutral-800 border-b border-neutral-300 pb-1 hover:border-black transition-colors"
-                          >
+            >
               yellowglowstudios@gmail.com
             </a>
           </div>

@@ -34,13 +34,11 @@ const About = () => {
             </span>
 
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.1] tracking-tight ">
-              We're a small team of designers and developers who believe in the
-              power of <span className="text-neutral-400">restraint</span>
+            We’re a focused web studio built on clarity, execution & <span className="text-neutral-400">restraint</span>
             </h2>
             <div className="flex flex-col gap-6 max-w-md text-neutral-600 text-lg leading-relaxed">
               <p>
-                Every project receives our full attention. We don't take on more
-                than we can handle with care.
+                Every project is handled directly, end to end — with no layers, no handoffs, and full attention.
               </p>
             </div>
             <div className="pt-4">

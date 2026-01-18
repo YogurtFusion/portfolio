@@ -20,14 +20,14 @@
   --fs-links: 16px;
   --fs-h1: 64px;
   --fs-h2: 48px;
-  --fs-h3:24px;
+  --fs-h3: 24px;
   --fs-p: 20px;
   --fs-sub-head: 16px;
 
   /* line heights */
   --lh-h1: 110%;
   --lh-p: 140%;
-  --lh-h2:110%;
+  --lh-h2: 110%;
   /* --lh-p2: 135%; */
 
   /* letter spacing */
@@ -36,12 +36,22 @@
   --ls-p: 0.012em;
   --ls-link: 0.01em;
 }
-@layer utilities{
-  .bg-projects-gradient{
-    background: radial-gradient(94.82% 94.82% at 50% 33.2%, rgba(250, 204, 21, 0.02) 0%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, rgba(254, 254, 254, 0.20) 0%, rgba(248, 248, 248, 0.20) 100%), #FEFEFE;
+@layer utilities {
+  .bg-projects-gradient {
+    background:
+      radial-gradient(
+        94.82% 94.82% at 50% 33.2%,
+        rgba(250, 204, 21, 0.02) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(254, 254, 254, 0.2) 0%,
+        rgba(248, 248, 248, 0.2) 100%
+      ),
+      #fefefe;
   }
 }
-
 
 body {
   zoom: 100%;
@@ -63,15 +73,12 @@ section {
   background-position: center;
   background-size: cover;
   position: relative;
-  background-color: #FDFBF7; 
+  background-color: #fdfbf7;
   /* CHANGE #E5E5E5 TO #ECEBE4 (or something lighter/warmer) */
-  background-image: radial-gradient(#E8E6E1 1.5px, transparent 1.5px);
-  background-size: 24px 24px; 
+  background-image: radial-gradient(#e8e6e1 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
 }
 .hero > * {
   position: relative;
   z-index: 2;
 }
-
-
-

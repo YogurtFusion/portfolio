@@ -22,7 +22,10 @@ const approachData = [
 ];
 const About = () => {
   return (
-    <section className=" w-full bg-[#FDFCF8] text-[#121212] py-20 px-6  border-b border-neutral-200 " id="about">
+    <section
+      className=" w-full bg-[#FDFCF8] text-[#121212] py-20 px-6  border-b border-neutral-200 "
+      id="about"
+    >
       <div className="grid grid-cols-1 lg:grid-cols-2 max-w-7xl mx-auto ">
         <div className="left relative flex flex-col justify-between gap-12 lg:pr-16 lg:py-8 lg:border-r border-neutral-200 ">
           <div className="flex flex-col gap-8 lg:sticky lg:top-10">
@@ -35,7 +38,6 @@ const About = () => {
               power of <span className="text-neutral-400">restraint</span>
             </h2>
             <div className="flex flex-col gap-6 max-w-md text-neutral-600 text-lg leading-relaxed">
-          
               <p>
                 Every project receives our full attention. We don't take on more
                 than we can handle with care.
@@ -63,7 +65,9 @@ const About = () => {
               key={index}
               className="right-body group flex flex-col gap-4 border-t border-neutral-200 pt-8 transition-colors  duration-300 hover:border-neutral-900"
             >
-              <span className="uppercase tracking-widest text-xs text-neutral-400 group-hover:text-black transition-colors">{about.week} </span>
+              <span className="uppercase tracking-widest text-xs text-neutral-400 group-hover:text-black transition-colors">
+                {about.week}{" "}
+              </span>
               <div className="flex flex-col  md:justify-between md:flex-row  md:gap-8">
                 <h4 className="text-neutral-900  text-xl font-medium  w-full md:w-1/3 ">
                   {about.title}

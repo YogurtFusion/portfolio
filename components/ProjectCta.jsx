@@ -3,7 +3,10 @@ import React from "react";
 
 const ProjectCta = () => {
   return (
-    <section className=" mt-24  py-20 border-t border-neutral-200 bg-[#E4E2DD] mb-0! " id="projectCta">
+    <section
+      className=" mt-24  py-20 border-t border-neutral-200 bg-[#E4E2DD] mb-0! "
+      id="projectCta"
+    >
       <div className="max-w-4xl mx-auto px-6 text-center">
         <span className="text-sm text-neutral-500 font-medium mb-6 block tracking-tight">
           What's next?

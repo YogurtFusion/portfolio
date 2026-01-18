@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const projects = [
@@ -85,9 +86,14 @@ const ProjectsCards = () => {
               <span>{project.year} </span>
             </div>
 
-            <h2 className="text-4xl  md:text-5xl text-neutral-900 mb-6 font-serif tracking-tight"> {project.title} </h2>
+            <h2 className="text-4xl  md:text-5xl text-neutral-900 mb-6 font-serif tracking-tight">
+              {" "}
+              {project.title}{" "}
+            </h2>
 
-            <p className="text-neutral-600  mb-8 leading-relaxed text-base">{project.description}</p>
+            <p className="text-neutral-600  mb-8 leading-relaxed text-base">
+              {project.description}
+            </p>
 
             <div className="flex flex-wrap gap-2 mb-10">
               {project.tags.map((tag) => (
@@ -100,10 +106,10 @@ const ProjectsCards = () => {
               ))}
             </div>
 
-            <button className=" relative group text-sm font-medium text-neutral-800  pb-1 hover:text-neutral-900 transition-colors">
+            <Link href={"/"} className=" relative group text-sm font-medium text-neutral-800  pb-1 hover:text-neutral-900 transition-colors">
               View Project
               <span className=" absolute w-full h-px scale-x-0 group-hover:scale-x-100  left-0 bottom-[-1px] bg-neutral-700  origin-left transform transition-all duration-300 ease-out will-change-transform "></span>
-            </button>
+            </Link>
           </div>
         </div>
       ))}

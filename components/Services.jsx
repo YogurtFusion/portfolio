@@ -10,9 +10,13 @@ const servicesData = [
       "Frontend & Backend development using modern frameworks, focused on performance and maintainability.",
   },
 ];
+
 const Services = () => {
   return (
-    <section className="w-full max-w-336 mx-auto p-12 flex flex-col gap-20" id="services">
+    <section
+      className="w-full max-w-336 mx-auto p-12 flex flex-col gap-20"
+      id="services"
+    >
       <div className="project-head grid grid-cols-1 md:grid-cols-2 gap-10 items-end pb-6   border-b border-[#DBDAD6]  ">
         <div className="flex flex-col gap-3 ">
           <p
@@ -46,7 +50,7 @@ const Services = () => {
           }}
         >
           <p className="">
-          {/* <p className="text-base "> */}
+            {/* <p className="text-base "> */}
             We combine strategic thinking with meticulous craft to create
             digital experiences that look beautiful and deliver results.
           </p>

@@ -22,7 +22,10 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link href={"#services"} className="hover:text-black transition-colors">
+          <Link
+            href={"#services"}
+            className="hover:text-black transition-colors"
+          >
             Services
           </Link>
         </li>

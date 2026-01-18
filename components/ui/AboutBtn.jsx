@@ -3,7 +3,10 @@ import React from "react";
 
 const AboutBtn = () => {
   return (
-    <Link href={"/projects"} className=" group inline-flex items-center gap-2 transition-all duration-300 ">
+    <Link
+      href={"/projects"}
+      className=" group inline-flex items-center gap-2 transition-all duration-300 "
+    >
       <span className="relative text-sm uppercase tracking-widest font-medium">
         Learn more
         <span className="absolute w-full h-px -bottom-1 origin-left transform scale-x-0 left-0  bg-[#121212] group-hover:scale-x-100 will-change-transform transition-transform duration-300 "></span>
@@ -30,7 +33,6 @@ const AboutBtn = () => {
 
 export default AboutBtn;
 
-
 // const AboutBtn = () => {
 //   return (
 //     <button className="group inline-flex items-center gap-2 relative">
@@ -39,7 +41,7 @@ export default AboutBtn;
 //         {/* Animated Underline */}
 //         <span className="absolute left-0 -bottom-1 w-full h-px bg-black origin-left transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
 //       </span>
-      
+
 //       {/* Arrow Icon with Slide Animation */}
 //       <span className="transform transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
 //         <svg

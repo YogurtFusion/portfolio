@@ -2,7 +2,7 @@
 
 A minimalist, high-performance portfolio website for a digital design agency specializing in websites for restaurants and cafes.
 
-![live site link]([https://via.placeholder.com/1200x600?text=Upload+Your+Screenshot+Here](https://portfolio-blond-tau-65.vercel.app/))
+###[live site link]([https://via.placeholder.com/1200x600?text=Upload+Your+Screenshot+Here](https://portfolio-blond-tau-65.vercel.app/))
 ## 🚀 About The Project
 
 Yellow Glow Studios is a niche web design agency portfolio. The goal of this project was to create a clean, high-speed landing page that converts visitors into clients using a minimalist aesthetic and clear calls to action.

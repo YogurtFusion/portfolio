@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const cardData = [
   {
-    title: "Sudo folio",
-    desc: "Portfolio",
-    img: "/images/kali-mockup.png",
+    title: "Lighthouse Cafe",
+    desc: "cafe",
+    img: "/images/lighthout-mockup.png",
   },
 ];
 const ProjectSmallCardBottom = () => {

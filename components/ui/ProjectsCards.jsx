@@ -5,55 +5,52 @@ const projects = [
   {
     id: 1,
 
-    title: "Lumina",
+    title: "Buzzi",
 
-    category: "E-commerce",
+    category: "Social Media Platform",
 
-    year: "2024",
+    year: "2025",
 
     description:
       "A refined shopping experience for sustainable home goods. Redefining how users interact with eco-friendly products.",
 
     tags: ["Brand Identity", "Web Design", "Development"],
 
-    image:
-      "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=2070&auto=format&fit=crop", // Placeholder image
+    image: "/images/buzii-thubnail.png",
   },
 
   {
     id: 2,
 
-    title: "Apex Finance",
+    title: "Sudo Folio",
 
-    category: "Fintech",
+    category: "Portfolio",
 
-    year: "2023",
+    year: "2025",
 
     description:
       "Real-time trading dashboard for modern investors. Focusing on speed, clarity, and data visualization.",
 
     tags: ["UI/UX", "Frontend", "React"],
 
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+    image: "/images/kali-thumbnail.png",
   },
 
   {
     id: 3,
 
-    title: "Mono Arch",
+    title: "Lighthouse Cafe",
 
-    category: "Architecture",
+    category: "Cafe",
 
-    year: "2024",
+    year: "2025",
 
     description:
       "A minimal portfolio for a high-end architecture firm based in Tokyo.",
 
     tags: ["WebGL", "Minimalism", "GSAP"],
 
-    image:
-      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2000&auto=format&fit=crop",
+    image: "/images/lightHouse-thubnail.png",
   },
 ];
 
@@ -72,7 +69,7 @@ const ProjectsCards = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-conver"
               />
             </div>
           </div>
@@ -106,7 +103,10 @@ const ProjectsCards = () => {
               ))}
             </div>
 
-            <Link href={"/"} className=" relative group text-sm font-medium text-neutral-800  pb-1 hover:text-neutral-900 transition-colors">
+            <Link
+              href={"/"}
+              className=" relative group text-sm font-medium text-neutral-800  pb-1 hover:text-neutral-900 transition-colors"
+            >
               View Project
               <span className=" absolute w-full h-px scale-x-0 group-hover:scale-x-100  left-0 bottom-[-1px] bg-neutral-700  origin-left transform transition-all duration-300 ease-out will-change-transform "></span>
             </Link>

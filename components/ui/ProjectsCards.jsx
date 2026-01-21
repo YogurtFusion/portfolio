@@ -1,59 +1,98 @@
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+// const projects = [
+//   {
+//     id: 1,
 
+//     title: "Buzzi",
+
+//     category: "Social Media Platform",
+
+//     year: "2025",
+
+//     description:
+//       "A refined shopping experience for sustainable home goods. Redefining how users interact with eco-friendly products.",
+
+//     tags: ["Brand Identity", "Web Design", "Development"],
+
+//     image: "/images/buzii-thubnail.png",
+//     link: "https://buzzi.co.in"
+//   },
+
+//   {
+//     id: 2,
+
+//     title: "Sudo Folio",
+
+//     category: "Portfolio",
+
+//     year: "2025",
+
+//     description:
+//       "Real-time trading dashboard for modern investors. Focusing on speed, clarity, and data visualization.",
+
+//     tags: ["UI/UX", "Frontend", "React"],
+
+//     image: "/images/kali-thumbnail.png",
+//     link:"https://kali-pru9.vercel.app/"
+//   },
+
+//   {
+//     id: 3,
+
+//     title: "Lighthouse Cafe",
+
+//     category: "Cafe",
+
+//     year: "2025",
+
+//     description:
+//       "A minimal portfolio for a high-end architecture firm based in Tokyo.",
+
+//     tags: ["WebGL", "Minimalism", "GSAP"],
+
+//     image: "/images/lightHouse-thubnail.png",
+//     link: "https://lighthouse-cafe.vercel.app/"
+//   },
+// ];
 const projects = [
   {
     id: 1,
-
     title: "Buzzi",
-
-    category: "Social Media Platform",
-
+    category: "Social Community Platform",
     year: "2025",
-
     description:
-      "A refined shopping experience for sustainable home goods. Redefining how users interact with eco-friendly products.",
-
-    tags: ["Brand Identity", "Web Design", "Development"],
-
+      "A calm, friendly social platform interface focused on clarity, approachability, and everyday interactions — designed to feel lightweight, human, and easy to use..",
+    tags: ["Social Experience", "Gamification", "UI Engineering"],
     image: "/images/buzii-thubnail.png",
+    link: "https://buzzi.co.in",
   },
 
   {
     id: 2,
-
     title: "Sudo Folio",
-
-    category: "Portfolio",
-
+    category: "Interactive Portfolio",
     year: "2025",
-
     description:
-      "Real-time trading dashboard for modern investors. Focusing on speed, clarity, and data visualization.",
-
-    tags: ["UI/UX", "Frontend", "React"],
-
+      "A developer portfolio reimagined as a fully functional desktop OS. This immersive interface blends technical prowess with creative design, showcasing code in its native habitat.",
+    tags: ["System Design", "OS Simulation", "Creative Dev"],
     image: "/images/kali-thumbnail.png",
+    link: "https://kali-pru9.vercel.app/",
   },
 
   {
     id: 3,
-
     title: "Lighthouse Cafe",
-
-    category: "Cafe",
-
+    category: "Hospitality & Brand",
     year: "2025",
-
     description:
-      "A minimal portfolio for a high-end architecture firm based in Tokyo.",
-
-    tags: ["WebGL", "Minimalism", "GSAP"],
-
+      "A warm, atmospheric cafe website concept focused on mood, comfort, and first impressions — translating an interior experience into a digital one..",
+    tags: ["Hospitality", "Visual Identity", "UX Design"],
     image: "/images/lightHouse-thubnail.png",
+    link: "https://lighthouse-cafe.vercel.app/",
   },
 ];
-
 const ProjectsCards = () => {
   return (
     <div className="flex flex-col gap-32">
@@ -65,11 +104,13 @@ const ProjectsCards = () => {
           }`}
         >
           <div className="w-full md:w-1/2 ">
-            <div className="aspect-[4/3] bg-neutral-200 rounded-sm overflow-hidden">
-              <img
+            <div className=" relative aspect-[4/3] bg-neutral-200 rounded-sm overflow-hidden">
+              <Image
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-conver"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw "
               />
             </div>
           </div>
@@ -104,7 +145,7 @@ const ProjectsCards = () => {
             </div>
 
             <Link
-              href={"/"}
+              href={project.link}
               className=" relative group text-sm font-medium text-neutral-800  pb-1 hover:text-neutral-900 transition-colors"
             >
               View Project

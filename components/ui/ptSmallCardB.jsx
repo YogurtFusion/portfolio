@@ -17,7 +17,7 @@ const ProjectSmallCardBottom = () => {
          <Image
          src={data.img}
          alt={data.title}
-         fill//
+         fill
          className="object-cover"
          sizes="(max-width: 768px) 100vw, 50vw "
          />

@@ -2,6 +2,8 @@
 
 A minimalist, high-performance portfolio website for a digital design agency specializing in websites for restaurants and cafes.
 
+<img width="4320" height="2715" alt="portfolio-blond-tau-65 vercel app_ (4)" src="https://github.com/user-attachments/assets/35761761-e056-42f4-a971-3531c2b3f01b" />
+
 # [Live Link](https://portfolio-blond-tau-65.vercel.app/)
 ## 🚀 About The Project
 

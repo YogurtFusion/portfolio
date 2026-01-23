@@ -18,8 +18,8 @@ const Hero = () => {
           {/* hero body */}
           <div className=" md:col-span-5 flex flex-col md:items-start md:pl-8  space-y-8">
             <p className=" text-xl md:text-2xl text-neutral-800  leading-relaxed font-medium max-w-md text-halo ">
-              Websites for small brands, restaurants and cafés that value speed, clarity, and
-              customers.
+              Websites for small brands, restaurants and cafés that turn
+              visitors into customers.
             </p>
             <div className="hero-btn w-fit ">
               <HeroButton />

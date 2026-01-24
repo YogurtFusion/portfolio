@@ -71,9 +71,9 @@ const Footer = () => {
             </Link>
             <Link
               className="hover:text-black transition-colors underline decoration-neutral-300"
-              href={"https://github.com/YogurtFusion"}
+              href={"https://www.instagram.com/yellowglowstdio/"}
             >
-              GitHub
+              Instagram
             </Link>
             <Link
               className="hover:text-black transition-colors underline decoration-neutral-300"
